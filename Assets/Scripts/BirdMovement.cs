@@ -2,12 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+///Logica del Movimiento y animaciones 
+/// </summary>
 public class BirdMovement : MonoBehaviour
 {
     private bool isDead = false;
     [SerializeField] private float upForce = 200f;
     [SerializeField] private KeyCode upControl = KeyCode.Space;
+    
     private Rigidbody2D rb2d;
     
 
@@ -44,7 +47,6 @@ public class BirdMovement : MonoBehaviour
     {
         isDead = true;
         anim.SetTrigger("Muerto");
-        //gameController.BirdDie();
         GameController.instance.BirdDie();
         rb2d.velocity = Vector2.zero;
     }

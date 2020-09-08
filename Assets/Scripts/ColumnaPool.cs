@@ -11,8 +11,8 @@ public class ColumnaPool : MonoBehaviour
     public Vector2 objectPoolPosition = new Vector2(-20, 0);
     private float timeSinceLastSpawned;
     public float spawnRate;
-    public float columnMax = 3f;
-    public float columnMin = 11.52f;
+    public float columnMax = 1f;
+    public float columnMin = -6f;
     public float spawnXposition = 20f;
     private int currentColumn;
     void Start()
